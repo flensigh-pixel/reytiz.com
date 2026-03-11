@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BR COPY LITE | REYTIZ SHOP</title>
+  <link rel="icon" href="images/favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.remove('no-js');</script>
+
+</head>
+
+<body>
+
+  <header class="header-modern" id="top">
+    <div class="nav-container">
+      <a href="index.html" class="logo-modern" aria-label="На главную">
+        <i class="ri-arrow-left-line" style="font-size: 24px; color: white; margin-right: 10px;"></i>
+        <span class="logo-text">REYTIZ</span>
+        <span class="logo-badge">SHOP</span>
+      </a>
+
+      <div class="nav-actions-modern">
+         <a href="https://t.me/reytiz_shop" target="_blank" rel="noopener" class="tg-btn-modern">
+          <div class="tg-btn-content">
+            <i class="ri-telegram-fill" aria-hidden="true"></i>
+            <span class="tg-text">Связаться</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="product-page-container">
+    
+    <div class="breadcrumbs">
+      <a href="index.html" class="crumb-link">Главная</a>
+      <span class="crumb-sep">/</span>
+      <span class="crumb-current">BR COPY Lite</span>
+    </div>
+
+    <div class="product-showcase-grid">
+      
+      <div class="product-gallery">
+        <div class="main-image-frame">
+          <img src="images/br_lite.jpg" alt="" class="blur-bg-img" id="blurBg">
+          <img src="images/br_lite.jpg" alt="BR COPY Lite Main" class="main-img" id="mainImg">
+        </div>
+        
+        <div class="thumbs-grid">
+          <img src="images/br_lite.jpg" alt="Screenshot 1" class="thumb-img active-thumb" onclick="changeImage(this)">
+  
+        </div>
+      </div>
+
+      <div class="product-info-panel">
+        <div class="product-labels">
+          <span class="badge-new" style="background: var(--gradient-blue); color: white;"><i class="ri-flashlight-fill"></i> LITE</span>
+          <span class="badge-ver">СТАРАЯ КАРТА</span>
+        </div>
+
+        <h1 class="product-page-title">BR COPY <span class="text-gradient" style="background: var(--gradient-blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">LITE</span></h1>
+        
+        <div class="price-block-large">
+          <div class="current-price">499₽</div>
+          </div>
+
+        <p class="short-desc">
+          Стабильная базовая версия. Система семей, новые интерфейсы, исправленные баги и оптимизация под Android 15 (х32).
+        </p>
+
+        <div class="action-buttons-stack">
+          <button class="btn-buy-large" onclick="openModal('modal-buy')">
+            <span>КУПИТЬ СЕЙЧАС</span>
+            <i class="ri-shopping-cart-2-fill"></i>
+          </button>
+          
+          <button class="btn-test-outline" onclick="openModal('modal-test')">
+            <span>ПРОТЕСТИРОВАТЬ</span>
+            <i class="ri-gamepad-fill"></i>
+          </button>
+
+          <a href="#details" class="btn-more-outline">
+            <span>ОПИСАНИЕ</span>
+            <i class="ri-arrow-down-line"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="details" class="details-section">
+      <h2 class="details-title">ЧТО ВНУТРИ?</h2>
+      
+      <div class="details-grid">
+        <div class="detail-card">
+          <div class="detail-header">
+            <i class="ri-settings-4-line"></i>
+            <h3>ЛАУНЧЕР</h3>
+          </div>
+          <ul class="detail-list">
+            <li><i class="ri-check-line"></i> Оптимизация<b>Android 15</b>(x32)</li>
+            <li><i class="ri-check-line"></i> Новая загрузка кеша (проверка всех файлов)</li>
+            <li><i class="ri-check-line"></i> Новый выбор спавна с выбором последнего места</li>
+            <li class="warning-text"><i class="ri-check-line"></i> <b>Синхронизация радара </b></li>
+            <li><i class="ri-check-line"></i> Новые интерфейсы: Магазин одежды, АЗС, TAB</li>
+            <li><i class="ri-check-line"></i> Новый интерфейс регистрации и авторизации</li>
+            <li><i class="ri-check-line"></i> Исправлены подсказки клавиатуры</li>
+            <li><i class="ri-check-line"></i> Новый интерфейс админ-слежки</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-header">
+            <i class="ri-gamepad-line"></i>
+            <h3>МОД</h3>
+          </div>
+          <ul class="detail-list">
+            <li><i class="ri-check-line"></i> Система Семей</li>
+            <li><i class="ri-check-line"></i> Транспортная компания</li>
+            <li><i class="ri-check-line"></i> Новое главное меню</li>
+            <li><i class="ri-check-line"></i> Изменены админ. команды</li>
+            <li><i class="ri-check-line"></i> Исправлены многие баги</li>
+            <li><i class="ri-check-line"></i> Система /bg</li>
+            <li><i class="ri-check-line"></i> Раздевалки во фракциях</li>
+          </ul>
+        </div>
+
+        <div class="detail-card highlight-card">
+          <div class="detail-header">
+            <i class="ri-gift-line"></i>
+            <h3>В СТОИМОСТЬ ВХОДИТ</h3>
+          </div>
+          <ul class="detail-list">
+            <li><i class="ri-add-circle-fill"></i> <b>Хостинг Maze</b></li>
+            <li><i class="ri-add-circle-fill"></i> Установка под ключ</li>
+            <li><i class="ri-add-circle-fill"></i> Смена всех названий и ссылок</li>
+            <li><i class="ri-add-circle-fill"></i> Размещение файлов игры на моем веб хостинге</li>
+            <li><i class="ri-add-circle-fill"></i> Компиляция лаунчера</li>
+            <li><i class="ri-add-circle-fill"></i> Выдача полностью готового и настроенного проекта</li>
+            <li><i class="ri-add-circle-fill"></i> Поддержка и обновления</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-actions">
+      <h3 class="bottom-actions-title">Понравился проект?</h3>
+      <div class="action-buttons-stack horizontal-stack">
+        <button class="btn-buy-large" onclick="openModal('modal-buy')">
+          <span>КУПИТЬ ПРОЕКТ</span>
+          <i class="ri-telegram-fill"></i>
+        </button>
+        <button class="btn-test-outline" onclick="openModal('modal-test')">
+          <span>ПРОТЕСТИРОВАТЬ</span>
+          <i class="ri-gamepad-fill"></i>
+        </button>
+      </div>
+    </div>
+    
+   
+      
+      <div class="similar-section">
+      <h3 class="similar-title">СМОТРИТЕ ТАКЖЕ</h3>
+      <div class="products-grid-attractive">
+        
+       
+
+           <a href="brpro.html" class="product-card-attractive force-visible" data-title="BR COPY PRO">
+          <div class="product-badge rp-badge"><i class="ri-star-fill"></i> PRO</div>
+          <div class="product-image-wrapper">
+            <img src="images/br_pro.jpg" alt="BR COPY Pro" class="product-image">
+            <div class="image-overlay"></div>
+          </div>
+          <div class="product-content">
+            <div class="product-header">
+              <h3 class="product-title">BR COPY PRO</h3>
+            </div>
+            <div class="product-pricing">
+               <div class="price-old">999₽</div>
+               <div class="price-current">
+                 <span class="price-amount">799₽</span>
+                 <span class="price-discount">-20%</span>
+               </div>
+            </div>
+            <div class="btn-product">ПОДРОБНЕЕ</div>
+          </div>
+        </a>
+
+     <a href="brprem.html" class="product-card-attractive force-visible" data-title="BR COPY PREMIUM">
+          <div class="product-badge pro-badge"><i class="ri-crown-fill"></i> PREMIUM</div>
+          <div class="product-image-wrapper">
+            <img src="images/br_prem2.jpg" alt="BR COPY Premium" class="product-image">
+            <div class="image-overlay"></div>
+          </div>
+          <div class="product-content">
+            <div class="product-header">
+              <h3 class="product-title">BR COPY PREMIUM</h3>
+            </div>
+            <div class="product-pricing">
+               <div class="price-old">1499₽</div>
+               <div class="price-current">
+                 <span class="price-amount">999₽</span>
+                 <span class="price-discount">-33%</span>
+               </div>
+            </div>
+            <div class="btn-product">ПОДРОБНЕЕ</div>
+          </div>
+        </a>
+        
+
+        <a href="probrp.html" class="product-card-attractive force-visible" data-title="BRILLIANT RP LITE">
+          <div class="product-badge"><i class="ri-gamepad-fill"></i> LITE</div>
+          <div class="product-image-wrapper">
+            <img src="images/brp_pro.jpg" alt="Brilliant RP Lite" class="product-image">
+            <div class="image-overlay"></div>
+          </div>
+          <div class="product-content">
+            <div class="product-header">
+              <h3 class="product-title">BRILLIANT RP LITE</h3>
+            </div>
+            <div class="product-pricing">
+              <div class="price-current"><span class="price-amount">350₽</span></div>
+            </div>
+            <div class="btn-product">ПОДРОБНЕЕ</div>
+          </div>
+        </a>
+        
+        <a href="brppro.html" class="product-card-attractive force-visible" data-title="BRILLIANT RP PRO">
+          <div class="product-badge rp-badge"><i class="ri-gem-fill"></i> PRO</div>
+          <div class="product-image-wrapper">
+            <img src="images/brppro_zima.jpg" alt="Brilliant RP Pro" class="product-image">
+            <div class="image-overlay"></div>
+          </div>
+          <div class="product-content">
+            <div class="product-header">
+              <h3 class="product-title">BRILLIANT RP PRO</h3>
+            </div>
+            <div class="product-pricing">
+               <div class="price-current"><span class="price-amount">799₽</span></div>
+            </div>
+            <div class="btn-product">ПОДРОБНЕЕ</div>
+          </div>
+        </a>
+
+        
+
+        <a href="harsh.html" class="product-card-attractive force-visible" data-title="HARSH RUSSIA">
+          <div class="product-badge budget-badge"><i class="ri-wallet-3-fill"></i> БЮДЖЕТ</div>
+          <div class="product-image-wrapper">
+            <img src="images/harsh.jpg" alt="Harsh Russia" class="product-image">
+            <div class="image-overlay"></div>
+          </div>
+          <div class="product-content">
+            <div class="product-header">
+              <h3 class="product-title">HARSH RUSSIA</h3>
+            </div>
+            <div class="product-pricing">
+              <div class="price-current"><span class="price-amount">250₽</span></div>
+            </div>
+            <div class="btn-product">ПОДРОБНЕЕ</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer-modern">
+    <div class="footer-container">
+     <div class="footer-bottom" style="justify-content: center;">
+       <div class="footer-copyright">
+         <p>©2022-<script>document.write(new Date().getFullYear());</script> REYTIZ SHOP</p>
+       </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modal-buy" onclick="closeModal(event, 'modal-buy')">
+    <div class="modal-window">
+      <button class="modal-close" onclick="closeModal(event, 'modal-buy', true)"><i class="ri-close-line"></i></button>
+      <div class="modal-content-wrap">
+        <div class="modal-icon section-title-attractive"><i class="ri-shopping-cart-2-fill"></i></div>
+        <h3 class="modal-title">Покупка проекта</h3>
+        <p class="modal-text">Чтобы купить <b>BR COPY LITE</b>, напишите нам в Telegram. Мы обсудим детали и начнем оформление.</p>
+        <a href="https://t.me/reytiz_shop" target="_blank" class="btn-buy-large modal-btn">
+          <span>НАПИСАТЬ В TELEGRAM</span>
+          <i class="ri-telegram-fill"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-test" onclick="closeModal(event, 'modal-test')">
+    <div class="modal-window">
+      <button class="modal-close" onclick="closeModal(event, 'modal-test', true)"><i class="ri-close-line"></i></button>
+      <div class="modal-content-wrap">
+        <div class="modal-icon section-title-attractive" style="--icon-color: var(--accent-blue);"><i class="ri-gamepad-fill"></i></div>
+        <h3 class="modal-title">Тестирование</h3>
+        <p class="modal-text">Напишите нам в Telegram с пометкой "Тест", чтобы получить доступ к тестовому серверу.</p>
+        <a href="https://t.me/reytiz_shop" target="_blank" class="btn-buy-large modal-btn" style="background: var(--telegram-color);">
+          <span>ЗАПРОСИТЬ ТЕСТ В TG</span>
+          <i class="ri-telegram-fill"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Умная смена картинок
+    function changeImage(thumb) {
+      document.querySelectorAll('.thumb-img').forEach(img => img.classList.remove('active-thumb'));
+      thumb.classList.add('active-thumb');
+      
+      const mainImg = document.getElementById('mainImg');
+      const blurBg = document.getElementById('blurBg');
+      
+      mainImg.style.opacity = 0;
+      blurBg.style.opacity = 0;
+      
+      setTimeout(() => {
+        mainImg.src = thumb.src;
+        blurBg.src = thumb.src;
+        mainImg.style.opacity = 1;
+        blurBg.style.opacity = 0.5;
+      }, 200);
+    }
+    
+    // Модальные окна
+    function openModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.add('modal-active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeModal(event, modalId, force = false) {
+      if (force || event.target.classList.contains('modal-overlay')) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.classList.remove('modal-active');
+          document.body.style.overflow = '';
+        }
+      }
+    }
+
+    // Анимации при скролле
+    document.addEventListener("DOMContentLoaded", function() {
+      const animatedElements = document.querySelectorAll('.detail-card, .bottom-actions, .similar-section, .product-card-attractive');
+
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+      };
+
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      animatedElements.forEach(el => observer.observe(el));
+    });
+  </script>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  var els = document.querySelectorAll('.detail-card, .bottom-actions, .similar-section, .product-card-attractive, .feature-card-attractive, .section-header-attractive');
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(function(el){ el.classList.add('animate-in'); });
+    return;
+  }
+});
+</script>
+
+</body>
+</html>
