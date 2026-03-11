@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Договор оферты | REYTIZ SHOP</title>
+  <meta name="description" content="Публичная оферта REYTIZ SHOP о продаже цифровых игровых продуктов (CRMP MOBILE проекты)." />
+  <link rel="icon" href="images/favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Локальные стили только для этой страницы — в стиле сайта */
+    .legal-wrap{
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px 80px;
+    }
+    .legal-hero{
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 22px;
+      padding: 26px 22px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+      overflow: hidden;
+      position: relative;
+    }
+    .legal-hero::before{
+      content:"";
+      position:absolute;
+      inset:-40%;
+      background: radial-gradient(circle, rgba(138,43,226,.18) 0%, rgba(0,0,0,0) 60%);
+      filter: blur(20px);
+      z-index:0;
+    }
+    .legal-hero > *{position:relative; z-index:1;}
+    .legal-badge{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      background: var(--gradient-yellow);
+      color: #000;
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+    .legal-title{
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 900;
+      font-size: clamp(26px, 3vw, 40px);
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+    .legal-sub{
+      color: rgba(255,255,255,.75);
+      max-width: 760px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .legal-meta{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .meta-chip{
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 999px;
+      padding: 8px 12px;
+      color: rgba(255,255,255,.85);
+      font-size: 13px;
+      display:flex;
+      align-items:center;
+      gap: 8px;
+    }
+
+    .legal-card{
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 22px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+      margin-bottom: 18px;
+    }
+
+    .legal-h2{
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 900;
+      font-size: 18px;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #8a2be2, #00bfff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .legal-p{
+      color: rgba(255,255,255,.82);
+      line-height: 1.75;
+      margin-bottom: 10px;
+    }
+    .legal-p b{color:#fff;}
+    .legal-list{
+      margin: 10px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+    .legal-list li{
+      display:flex;
+      gap: 10px;
+      align-items:flex-start;
+      color: rgba(255,255,255,.82);
+      line-height: 1.6;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 14px;
+      padding: 10px 12px;
+    }
+    .legal-list i{
+      color: rgba(255,255,255,.9);
+      margin-top: 2px;
+    }
+
+    .legal-warn{
+      border: 1px solid rgba(255, 215, 0, .25);
+      background: rgba(255, 215, 0, .06);
+    }
+
+    .legal-actions{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .btn-agree{
+      background: var(--gradient-primary);
+      color:#fff;
+      border: none;
+      border-radius: 16px;
+      padding: 14px 18px;
+      font-weight: 900;
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: .5px;
+      display:inline-flex;
+      gap: 10px;
+      align-items:center;
+      cursor:pointer;
+      transition: .25s;
+    }
+    .btn-agree:hover{transform: translateY(-3px); box-shadow: 0 20px 40px rgba(102,126,234,.35);}
+    .btn-back{
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.16);
+      color:#fff;
+      border-radius: 16px;
+      padding: 14px 18px;
+      font-weight: 900;
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: .5px;
+      display:inline-flex;
+      gap: 10px;
+      align-items:center;
+      cursor:pointer;
+      transition: .25s;
+    }
+    .btn-back:hover{transform: translateY(-3px); background: rgba(255,255,255,.12);}
+
+    .legal-note{
+      margin-top: 10px;
+      color: rgba(255,255,255,.65);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .legal-footer{
+      margin-top: 26px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255,255,255,.1);
+      color: rgba(255,255,255,.6);
+      font-size: 13px;
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .legal-footer a{color: rgba(255,255,255,.85);}
+    .legal-footer a:hover{color:#fff;}
+  </style>
+  <script>document.documentElement.classList.remove('no-js');</script>
+
+</head>
+
+<body>
+
+  <header class="header-modern" id="top">
+    <div class="nav-container">
+      <a href="index.html" class="logo-modern" aria-label="На главную">
+        <i class="ri-arrow-left-line" style="font-size: 24px; color: white; margin-right: 10px;"></i>
+        <span class="logo-text">REYTIZ</span>
+        <span class="logo-badge">SHOP</span>
+      </a>
+
+      <div class="nav-actions-modern">
+        <a href="https://t.me/reytiz_shop" target="_blank" rel="noopener" class="tg-btn-modern">
+          <div class="tg-btn-content">
+            <i class="ri-telegram-fill" aria-hidden="true"></i>
+            <span class="tg-text">Telegram</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="legal-wrap">
+
+    <div class="breadcrumbs" style="max-width:1000px; margin: 0 auto 18px;">
+      <a href="index.html" class="crumb-link">Главная</a>
+      <span class="crumb-sep">/</span>
+      <span class="crumb-current">Договор оферты</span>
+    </div>
+
+    <section class="legal-hero">
+      <div class="legal-badge"><i class="ri-file-text-line"></i> Публичная оферта</div>
+      <h1 class="legal-title">ДОГОВОР ОФЕРТЫ</h1>
+      <p class="legal-sub">
+        Настоящий документ регулирует покупку цифровых игровых продуктов (CRMP MOBILE проекты) в магазине REYTIZ SHOP.
+        Оплата означает полное согласие с условиями ниже.
+      </p>
+
+      <div class="legal-meta">
+        <div class="meta-chip"><i class="ri-calendar-2-line"></i> Дата публикации: <b> 16.01.2026 </b></div>
+        <div class="meta-chip"><i class="ri-telegram-line"></i> Поддержка: <b>@reytiz_shop</b></div>
+        <div class="meta-chip"><i class="ri-shield-check-line"></i> Формат: <b>цифровой продукт</b></div>
+      </div>
+    </section>
+
+    <section class="legal-card">
+      <h2 class="legal-h2">1. Общие положения</h2>
+      <p class="legal-p">
+        1.1. Настоящий документ является публичной офертой Продавца и содержит существенные условия продажи цифровых продуктов.
+      </p>
+      <p class="legal-p">
+        1.2. Оплата Покупателем выбранного продукта означает <b>полное и безоговорочное принятие</b> условий настоящей оферты.
+      </p>
+      <p class="legal-p">
+        1.3. Продавец предоставляет цифровые игровые продукты (проекты/версии) для CRMP MOBILE (далее — <b>«Продукт»</b>).
+      </p>
+    </section>
+
+    <section class="legal-card">
+      <h2 class="legal-h2">2. Предмет договора</h2>
+      <p class="legal-p">
+        2.1. Продавец обязуется предоставить Покупателю Продукт, а Покупатель обязуется оплатить его на условиях настоящей оферты.
+      </p>
+      <p class="legal-p">
+        2.2. Продукт является <b>цифровым нематериальным товаром</b>, предоставляемым в электронном виде.
+      </p>
+      <p class="legal-p">
+        2.3. Состав, версия, функционал и дополнительные опции продукта указаны <b>на странице конкретного проекта</b> на сайте.
+      </p>
+    </section>
+
+    <section class="legal-card legal-warn">
+      <h2 class="legal-h2">3. Тестирование перед покупкой</h2>
+      <p class="legal-p">
+        3.1. До покупки Покупателю предоставляется возможность протестировать Продукт.
+      </p>
+      <p class="legal-p">
+        3.2. Продавец <b>рекомендует</b> протестировать игру, чтобы проверить работу именно на вашем телефоне
+        (совместимость устройства, производительность и стабильность).
+      </p>
+      <p class="legal-p">
+        3.3. Отказ от тестирования не является основанием для возврата средств после покупки.
+      </p>
+    </section>
+
+    <section class="legal-card">
+      <h2 class="legal-h2">4. Как проходит сделка</h2>
+      <p class="legal-p">4.1. Сделка осуществляется по следующей схеме:</p>
+      <ul class="legal-list">
+        <li><i class="ri-check-double-line"></i><span><b>Оплата</b> выбранного Продукта.</span></li>
+        <li><i class="ri-check-double-line"></i><span>После оплаты Покупатель заполняет форму (название проекта, ссылки).</span></li>
+        <li><i class="ri-check-double-line"></i><span>Покупатель сообщает Данные для взаимодействия с хостинг-провайдером maze-host (данные аккаунта), чтобы Продавец приобрёл сервер на аккаунт Покупателя.</span></li>
+        <li><i class="ri-check-double-line"></i><span>Продавец покупает сервер на maze-host, загружает мод, подготавливает и передаёт готовый лаунчер.</span></li>
+        <li><i class="ri-check-double-line"></i><span>Продавец меняет все названия и ссылки на данные Покупателя (в рамках купленного Продукта).</span></li>
+      </ul>
+
+      <p class="legal-p" style="margin-top:12px;">
+        4.2. Доступ к maze-host запрашивается <b>только</b> для покупки/настройки сервера и передачи проекта так,
+        чтобы он находился <b>полностью во владении Покупателя</b>.
+      </p>
+      <p class="legal-p">
+        4.3. Покупатель отвечает за корректность введённых данных (названия, ссылки, доступы). Ошибки в данных могут повлиять на сроки/результат.
+      </p>
+    </section>
+    
+    <section class="legal-card">
+  <h2 class="legal-h2">5. Сроки выполнения</h2>
+
+  <p class="legal-p">
+    5.1. Срок подготовки и передачи готового проекта составляет, как правило,
+    от <b>1 до 2 календарных дней</b> с момента получения оплаты и всех необходимых данных.
+  </p>
+
+  <p class="legal-p">
+    5.2. В отдельных случаях, связанных с очередью заказов, техническими
+    обстоятельствами, работой хостинг-провайдеров либо иными
+    обстоятельствами, срок выполнения может быть увеличен (до 7 дней в редких случаях).
+  </p>
+
+  <p class="legal-p">
+    5.3. Сроки могут изменяться в зависимости от загруженности и внешних факторов,
+    не зависящих от Продавца.
+  </p>
+</section>
+
+
+    <section class="legal-card">
+      <h2 class="legal-h2">6. Исходные коды</h2>
+      <p class="legal-p">
+        6.1. Исходные коды входят в стоимость <b>только если</b> на странице конкретного проекта прямо указано «Исходники включены».
+      </p>
+      <p class="legal-p">
+        6.2. Если на странице проекта про исходники <b>не упомянуто</b>, значит <b>в стоимость они не входят</b>.
+      </p>
+    </section>
+
+    <section class="legal-card legal-warn">
+      <h2 class="legal-h2">7. Возврат средств</h2>
+      <p class="legal-p">
+        7.1. После покупки Продукта <b>возврат средств невозможен</b>, так как Продукт является цифровым товаром и предоставляется в электронном виде.
+      </p>
+      <p class="legal-p">
+        7.2. Оплата подтверждает, что Покупатель ознакомился с описанием Продукта, имел возможность протестировать его
+        и принимает характеристики выбранной версии.
+      </p>
+    </section>
+
+    <section class="legal-card">
+      <h2 class="legal-h2">8. Ответственность сторон</h2>
+      <p class="legal-p">
+        8.1. Продавец не несёт ответственности за ограничения или сбои, вызванные причинами, не зависящими от Продавца
+        (например: работа хостинга, ограничения устройств, действия сторонних сервисов).
+      </p>
+      <p class="legal-p">
+        8.2. Продавец несёт ответственность за предоставление Продукта в соответствии с описанием на странице выбранной версии
+        и за выполнение работ по схеме сделки (раздел 4).
+      </p>
+    </section>
+
+    <section class="legal-card">
+      <h2 class="legal-h2">9. Поддержка</h2>
+      <p class="legal-p">
+        9.1. По любым вопросам, связанным с покупкой/уточнением условий, Покупатель может обратиться в поддержку в Telegram:
+        <b>@reytiz_shop</b>.
+      </p>
+      <p class="legal-p">
+        9.2. Поддержка предоставляется в рамках приобретённого Продукта и условий конкретной версии.
+      </p>
+    </section>
+
+    <section class="legal-card">
+      <h2 class="legal-h2">10. Заключительные положения</h2>
+      <p class="legal-p">
+        10.1. Оферта действует с момента публикации на сайте. Продавец вправе обновлять условия оферты.
+      </p>
+      <p class="legal-p">
+        10.2. Актуальная версия оферты всегда доступна на этой странице.
+      </p>
+
+      <div class="legal-actions">
+        <button class="btn-agree" id="agreeBtn" type="button">
+          <i class="ri-check-line"></i>
+          <span>СОГЛАСЕН(-НА)</span>
+        </button>
+
+        <button class="btn-back" type="button" onclick="window.location.href='index.html'">
+          <i class="ri-home-4-line"></i>
+          <span>ВЕРНУТЬСЯ НА САЙТ</span>
+        </button>
+      </div>
+
+      <div class="legal-note" id="agreeNote">
+        Нажимая «Согласен(-на)», вы подтверждаете согласие с условиями оферты.  
+        Если у вас есть вопрос — напишите в поддержку в Telegram.
+      </div>
+
+      <div class="legal-footer">
+        <div>© REYTIZ SHOP</div>
+        <div>
+          <a href="index.html">Главная</a>
+          <span style="opacity:.5; margin:0 8px;">•</span>
+          <a href="https://t.me/reytiz_shop" target="_blank" rel="noopener">Поддержка</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    (function(){
+      const d = new Date();
+      const dd = String(d.getDate()).padStart(2,'0');
+      const mm = String(d.getMonth()+1).padStart(2,'0');
+      const yyyy = d.getFullYear();
+      const el = document.getElementById('offerDate');
+      if (el) el.textContent = dd + '.' + mm + '.' + yyyy;
+    })();
+
+    // Кнопка "Согласен(-на)" — просто подтверждение + удобный UX
+    document.getElementById('agreeBtn')?.addEventListener('click', () => {
+      const note = document.getElementById('agreeNote');
+      if (note) {
+        note.innerHTML = '✅ <b>Согласие зафиксировано.</b> Вы можете продолжить покупку.';
+      }
+      try {
+        localStorage.setItem('offer_agreed', String(Date.now()));
+      } catch(e) {}
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  var els = document.querySelectorAll('.detail-card, .bottom-actions, .similar-section, .product-card-attractive, .feature-card-attractive, .section-header-attractive');
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(function(el){ el.classList.add('animate-in'); });
+    return;
+  }
+});
+</script>
+
+
+</body>
+</html>
